@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Play 2048</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <div class="column is-one-fifth">
+            <div class="column has-background-dark is-size-5 has-text-primary has-text-centered">
+                Score is:&nbsp; <span id="score">d</span>
+            </div>
+            <div>
+                <table style="width:100%; height:20vw; border-spacing: 10px 10px;"
+                    class="table is-bordered has-background-dark is-size-3 has-text-primary has-text-centered">
+                    <tbody>
+                        <tr id="r1">
+                            <td>
+                                <div class="tile">1</div>
+                            </td>
+                            <td>
+                                <div class="tile">2</div>
+                            </td>
+                            <td>
+                                <div class="tile">3</div>
+                            </td>
+                            <td>
+                                <div class="tile">4</div>
+                            </td>
+                        </tr>
+
+                        <tr id="r2">
+                            <td>
+                                <div class="tile">5</div>
+                            </td>
+                            <td>
+                                <div class="tile">6</div>
+                            </td>
+                            <td>
+                                <div class="tile">7</div>
+                            </td>
+                            <td>
+                                <div class="tile">8</div>
+                            </td>
+                        </tr>
+
+                        <tr id="r3">
+                            <td>
+                                <div class="tile">9</div>
+                            </td>
+                            <td>
+                                <div class="tile">10</div>
+                            </td>
+                            <td>
+                                <div class="tile">11</div>
+                            </td>
+                            <td>
+                                <div class="tile">12</div>
+                            </td>
+                        </tr>
+
+                        <tr id="r4">
+                            <td>
+                                <div class="tile">13</div>
+                            </td>
+                            <td>
+                                <div class="tile">14</div>
+                            </td>
+                            <td>
+                                <div class="tile">15</div>
+                            </td>
+                            <td>
+                                <div class="tile">16</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="column has-text-centered has-background-dark has-text-primary">
+                <button id="reset" class="button is-link">Reset</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
