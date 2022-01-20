@@ -1,7 +1,3 @@
-/*
-Add your code for Game here
- */
-
 
 //everything column major order
 function movesLeft(board){
