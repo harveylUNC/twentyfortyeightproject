@@ -27,9 +27,6 @@ function movesLeft(board){
                     values.push(board[i][j+1]);
                 }
             }
-            // console.log("at " + board[i][j]+ " adjacent are " +values);
-            // console.log(values.includes(board[i][j]));
-            // console.log(values.includes(0));
 
             if(values.includes(board[i][j]) || values.includes(0)){
                 return true;
@@ -325,44 +322,9 @@ export default class Game {
 
 }
 
-let k = new Game(4);
-
-// let gs = {
-//     board: [
-//         0, 0, 0,  0, 0, 2,
-//         0, 0, 0,  0, 0, 0,
-//         0, 0, 2, 2
-//       ],
-//       score: 44,
-//       won: false,
-//       over: false
-// }
-// k.loadGame(gs);
-console.log("maxinit" + k.maxInit);
-console.log(k.toString());
-
-k.move("right");
-console.log(k.toString());
-console.log(k.getGameState().score);
-k.move("left");
-console.log(k.toString());
-console.log(k.getGameState().score);
-k.move("right");
-console.log(k.toString());
-console.log(k.getGameState().score);
-k.move("left");
-console.log(k.toString());
-console.log(k.getGameState().score);
-k.move("right");
-console.log(k.toString());
-console.log(k.getGameState().score);
-
-
-
 function create2DArray(rows) {
 
     var arr = new Array(rows);
-
 
     for (var i = 0; i < arr.length; i++) {
         arr[i] = new Array(rows);
