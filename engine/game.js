@@ -359,20 +359,6 @@ console.log(k.getGameState().score);
 
 
 
-
-// }
-// k.loadGame(gs);
-// console.log(gs.board);
-// console.log(k.toString());
-// console.log(k.over);
-// k.move("up");
-// console.log(k.toString());
-// console.log(k.over);
-// console.log(k.getGameState().over);
-
-
-
-
 function create2DArray(rows) {
 
     var arr = new Array(rows);
